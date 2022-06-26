@@ -1,0 +1,101 @@
+,opening,variation,frequency,avg_opening_ply,avg_turns,draw,black_wins,white_wins,win_by_mate,win_by_outoftime,win_by_resign,%white_wins,%black_wins,%draw,%resign,%mate,%outoftime,popularity
+32,English opening,English Opening: King's English Variation,94,2,63,3,37,54,38,14,40,57,39,3,43,40,15,Rare
+43,English opening,English Opening: King's English Variation |  Reversed Sicilian,45,3,70,3,15,27,12,5,25,60,33,7,56,27,11,Rare
+23,English opening,English Opening: Anglo-Scandinavian Defense,44,2,61,0,17,27,14,6,24,61,39,0,55,32,14,Rare
+54,English opening,English Opening: Symmetrical Variation,35,2,66,0,15,20,8,3,24,57,43,0,69,23,9,Rare
+2,English opening,English Opening: Agincourt Defense,31,2,64,2,8,21,8,0,21,68,26,6,68,26,0,Rare
+10,English opening,English Opening: Anglo-Indian Defense,30,2,77,0,14,16,9,3,18,53,47,0,60,30,10,Rare
+46,English opening,English Opening: King's English Variation |  Two Knights Variation,29,4,51,2,13,14,9,5,13,48,45,7,45,31,17,Rare
+0,English opening,English Opening,22,1,71,0,12,10,8,2,12,45,55,0,55,36,9,Rare
+30,English opening,English Opening: Great Snake Variation,21,2,63,2,8,11,1,4,14,52,38,10,67,5,19,Rare
+42,English opening,English Opening: King's English Variation |  Reversed Closed Sicilian,21,4,54,0,6,15,5,2,14,71,29,0,67,24,10,Rare
+110,French defence,French Defense: Knight Variation,271,3,61,15,121,135,84,14,158,50,45,6,58,31,5,Common
+117,French defence,French Defense: Normal Variation,120,3,59,4,45,71,49,17,50,59,38,3,42,41,14,Less common
+101,French defence,French Defense: Exchange Variation,109,5,64,9,42,58,24,5,71,53,39,8,65,22,5,Rare
+69,French defence,French Defense #2,96,2,61,4,51,41,34,10,48,43,53,4,50,35,10,Rare
+129,French defence,French Defense: Steinitz Attack,53,3,67,4,29,20,26,6,17,38,55,8,32,49,11,Rare
+81,French defence,French Defense: Advance Variation |  Paulsen Attack,52,9,62,3,24,25,8,4,37,48,46,6,71,15,8,Rare
+163,French defence,Rat Defense: Small Center Defense,49,4,69,3,14,32,18,3,25,65,29,6,51,37,6,Rare
+72,French defence,French Defense: Advance Variation #3,41,5,57,0,13,28,13,3,25,68,32,0,61,32,7,Rare
+121,French defence,French Defense: Queen's Knight,39,3,66,3,21,15,8,4,25,38,54,8,64,21,10,Rare
+111,French defence,French Defense: La Bourdonnais Variation,38,3,62,0,19,19,13,2,23,50,50,0,61,34,5,Rare
+187,King's pawn game,King's Pawn Game: Leonardis Variation,152,3,58,3,83,66,66,19,65,43,55,2,43,43,12,Less common
+194,King's pawn game,King's Pawn Game: Wayward Queen Attack,146,3,65,3,84,59,69,15,59,40,58,2,40,47,10,Less common
+203,King's pawn game,Scotch Game,127,5,57,2,51,74,39,8,78,58,40,2,61,31,6,Less common
+168,King's pawn game,Giuoco Piano,105,6,60,6,53,46,29,7,64,44,50,6,61,28,7,Rare
+169,King's pawn game,Italian Game,105,5,60,12,34,59,37,9,47,56,32,11,45,35,9,Rare
+179,King's pawn game,King's Knight Opening: Normal Variation,79,4,65,3,38,38,29,3,44,48,48,4,56,37,4,Rare
+167,King's pawn game,Four Knights Game: Italian Variation,77,8,61,4,42,31,24,2,47,40,55,5,61,31,3,Rare
+172,King's pawn game,Italian Game: Giuoco Pianissimo |  Italian Four Knights Variation,70,9,58,1,40,29,23,5,41,41,57,1,59,33,7,Rare
+173,King's pawn game,Italian Game: Giuoco Pianissimo |  Normal,58,8,53,3,28,27,16,3,36,47,48,5,62,28,5,Rare
+190,King's pawn game,King's Pawn Game: Napoleon Attack,57,3,54,4,24,29,32,1,20,51,42,7,35,56,2,Rare
+215,Philidor's defence,Philidor Defense #3,195,5,56,4,67,124,67,22,102,64,34,2,52,34,11,Less common
+214,Philidor's defence,Philidor Defense #2,193,4,70,8,96,89,74,14,97,46,50,4,50,38,7,Less common
+213,Philidor's defence,Philidor Defense,135,5,65,9,42,84,48,14,65,62,31,7,48,36,10,Less common
+220,Philidor's defence,Philidor Defense: Exchange Variation #2,42,7,55,0,14,28,13,3,26,67,33,0,62,31,7,Rare
+219,Philidor's defence,Philidor Defense: Exchange Variation,36,8,61,1,14,21,13,1,21,58,39,3,58,36,3,Rare
+216,Philidor's defence,Philidor Defense #4,28,6,79,2,12,14,9,2,15,50,43,7,54,32,7,Rare
+229,Philidor's defence,Philidor Defense: Nimzowitsch Variation,10,7,62,1,3,6,4,0,5,60,30,10,50,40,0,Rare
+221,Philidor's defence,Philidor Defense: Exchange Variation #3,8,6,51,0,4,4,3,1,4,50,50,0,50,38,12,Rare
+222,Philidor's defence,Philidor Defense: Hanham Variation,8,6,109,1,2,5,3,0,4,62,25,12,50,38,0,Rare
+227,Philidor's defence,Philidor Defense: Lopez Countergambit,5,6,40,0,2,3,1,0,4,60,40,0,80,20,0,Rare
+282,Polish (Sokolsky)  opening,Van't Kruijs Opening,316,1,64,16,203,97,150,25,125,31,64,5,40,47,8,Common
+248,Polish (Sokolsky)  opening,Hungarian Opening,127,1,64,3,63,61,54,10,60,48,50,2,47,43,8,Less common
+257,Polish (Sokolsky)  opening,Mieses Opening,61,1,59,1,38,22,30,3,27,36,62,2,44,49,5,Rare
+259,Polish (Sokolsky)  opening,Polish Opening,52,1,62,3,21,28,14,3,32,54,40,6,62,27,6,Rare
+273,Polish (Sokolsky)  opening,Saragossa Opening,49,1,62,0,22,27,16,5,28,55,45,0,57,33,10,Rare
+276,Polish (Sokolsky)  opening,Van Geet Opening,31,1,56,0,20,11,20,2,9,35,65,0,29,65,6,Rare
+256,Polish (Sokolsky)  opening,Kadas Opening,28,1,54,2,20,6,15,4,7,21,71,7,25,54,14,Rare
+243,Polish (Sokolsky)  opening,Grob Opening,27,1,56,2,19,6,15,1,9,22,70,7,33,56,4,Rare
+236,Polish (Sokolsky)  opening,Anderssen Opening,24,1,46,1,8,15,12,1,10,62,33,4,42,50,4,Rare
+258,Polish (Sokolsky)  opening,Mieses Opening: Reversed Rat,24,2,66,0,16,8,10,2,12,33,67,0,50,42,8,Rare
+298,Queen's pawn,Horwitz Defense,199,2,62,5,90,104,69,26,100,52,45,3,50,35,13,Less common
+306,Queen's pawn,Queen's Pawn,119,1,68,4,36,79,41,11,64,66,30,3,54,34,9,Less common
+302,Queen's pawn,Modern Defense,84,2,61,3,44,37,26,4,51,44,52,4,61,31,5,Rare
+287,Queen's pawn,English Defense #2,48,2,59,0,23,25,18,8,22,52,48,0,46,38,17,Rare
+288,Queen's pawn,Englund Gambit,39,2,60,3,13,23,15,4,17,59,33,8,44,38,10,Rare
+296,Queen's pawn,Englund Gambit Declined |  Reversed French,33,3,73,0,21,12,10,6,17,36,64,0,52,30,18,Rare
+299,Queen's pawn,Mikenas Defense,33,2,55,1,16,16,16,3,13,48,48,3,39,48,9,Rare
+286,Queen's pawn,English Defense,18,4,71,1,8,9,1,3,13,50,44,6,72,6,17,Rare
+304,Queen's pawn,Old Indian Defense,17,3,73,0,9,8,6,2,9,47,53,0,53,35,12,Rare
+305,Queen's pawn,Polish Defense,14,2,61,0,2,12,7,0,7,86,14,0,50,50,0,Rare
+372,Queen's pawn game,Queen's Pawn Game: Mason Attack,231,3,67,13,103,115,64,15,140,50,45,6,61,28,6,Common
+337,Queen's pawn game,Indian Game,176,2,68,10,100,66,58,17,92,38,57,6,52,33,10,Less common
+365,Queen's pawn game,Queen's Pawn Game: Chigorin Variation,159,3,64,4,65,90,63,15,77,57,41,3,48,40,9,Less common
+360,Queen's pawn game,Queen's Pawn Game,123,2,57,6,65,52,49,6,62,42,53,5,50,40,5,Less common
+361,Queen's pawn game,Queen's Pawn Game #2,116,3,66,6,58,52,45,8,58,45,50,5,50,39,7,Less common
+380,Queen's pawn game,Queen's Pawn Game: Zukertort Variation,109,3,64,6,44,59,38,10,55,54,40,6,50,35,9,Rare
+371,Queen's pawn game,Queen's Pawn Game: London System,79,5,65,2,42,35,28,2,47,44,53,3,59,35,3,Rare
+362,Queen's pawn game,Queen's Pawn Game #3,56,4,80,5,31,20,24,7,20,36,55,9,36,43,12,Rare
+375,Queen's pawn game,Queen's Pawn Game: Symmetrical Variation,49,4,69,4,25,20,16,7,22,41,51,8,45,33,14,Rare
+366,Queen's pawn game,Queen's Pawn Game: Colle System,31,5,61,1,17,13,9,6,15,42,55,3,48,29,19,Rare
+479,Ruy Lopez (Spanish opening),Ruy Lopez: Steinitz Defense,134,6,66,6,61,67,41,8,79,50,46,4,59,31,6,Less common
+397,Ruy Lopez (Spanish opening),Ruy Lopez: Berlin Defense #2,73,6,59,2,38,33,23,3,45,45,52,3,62,32,4,Rare
+394,Ruy Lopez (Spanish opening),Ruy Lopez,49,5,61,1,19,29,23,4,21,59,39,2,43,47,8,Rare
+432,Ruy Lopez (Spanish opening),Ruy Lopez: Exchange Variation,47,7,60,2,21,24,18,1,26,51,45,4,55,38,2,Rare
+450,Ruy Lopez (Spanish opening),Ruy Lopez: Morphy Defense |  Caro Variation,40,8,73,2,11,27,11,3,24,68,28,5,60,28,8,Rare
+412,Ruy Lopez (Spanish opening),Ruy Lopez: Classical Variation,40,6,57,3,16,21,17,1,19,52,40,8,48,42,2,Rare
+430,Ruy Lopez (Spanish opening),Ruy Lopez: Cozio Defense,37,6,71,2,16,19,16,7,12,51,43,5,32,43,19,Rare
+410,Ruy Lopez (Spanish opening),Ruy Lopez: Bird Variation,36,6,50,1,19,16,11,3,21,44,53,3,58,31,8,Rare
+438,Ruy Lopez (Spanish opening),Ruy Lopez: Exchange Variation |  Lutikov Variation,28,8,49,1,7,20,12,0,15,71,25,4,54,43,0,Rare
+403,Ruy Lopez (Spanish opening),Ruy Lopez: Berlin Defense |  Improved Steinitz Defense,26,8,70,2,7,17,4,3,17,65,27,8,65,15,12,Rare
+498,Scandinavian (centre counter) defence,Scandinavian Defense: Mieses-Kotroc Variation,253,4,63,6,89,158,103,16,128,62,35,2,51,41,6,Common
+482,Scandinavian (centre counter) defence,Scandinavian Defense,190,2,54,9,109,72,75,13,93,38,57,5,49,39,7,Less common
+494,Scandinavian (centre counter) defence,Scandinavian Defense: Main Line,61,6,64,2,22,37,20,6,34,61,36,3,56,33,10,Rare
+500,Scandinavian (centre counter) defence,Scandinavian Defense: Modern Variation #2,59,4,62,1,31,27,15,5,38,46,53,2,64,25,8,Rare
+492,Scandinavian (centre counter) defence,Scandinavian Defense: Icelandic-Palme Gambit,17,6,60,0,14,3,3,3,11,18,82,0,65,18,18,Rare
+502,Scandinavian (centre counter) defence,Scandinavian Defense: Panov Transfer,14,6,45,0,14,0,3,0,11,0,100,0,79,21,0,Rare
+487,Scandinavian (centre counter) defence,Scandinavian Defense: Blackburne Gambit,12,6,54,0,8,4,4,2,6,33,67,0,50,33,17,Rare
+491,Scandinavian (centre counter) defence,Scandinavian Defense: Gubinsky-Melts Defense,10,6,48,0,4,6,3,0,7,60,40,0,70,30,0,Rare
+496,Scandinavian (centre counter) defence,Scandinavian Defense: Main Line |  Mieses Variation,10,8,64,1,5,4,2,1,6,40,50,10,60,20,10,Rare
+503,Scandinavian (centre counter) defence,Scandinavian Defense: Portuguese Variation,9,6,67,3,4,2,0,1,5,22,44,33,56,0,11,Rare
+507,Sicilian defence,Sicilian Defense,337,3,63,14,181,142,110,27,189,42,54,4,56,33,8,Common
+521,Sicilian defence,Sicilian Defense: Bowdler Attack,289,3,66,13,162,114,98,24,155,39,56,4,54,34,8,Common
+635,Sicilian defence,Sicilian Defense: Old Sicilian,156,4,67,6,91,59,44,11,96,38,58,4,62,28,7,Less common
+662,Sicilian defence,Sicilian Defense: Smith-Morra Gambit #2,107,3,62,6,49,52,37,11,53,49,46,6,50,35,10,Rare
+515,Sicilian defence,Sicilian Defense: Alapin Variation,69,3,62,0,41,28,24,5,40,41,59,0,58,35,7,Rare
+597,Sicilian defence,Sicilian Defense: McDonnell Attack,68,3,58,3,32,33,12,8,45,49,47,4,66,18,12,Rare
+532,Sicilian defence,Sicilian Defense: Closed Variation,66,3,60,4,31,31,17,2,43,47,47,6,65,26,3,Rare
+625,Sicilian defence,Sicilian Defense: Nyezhmetdinov-Rossolimo Attack,66,5,65,1,30,35,18,4,43,53,45,2,65,27,6,Rare
+564,Sicilian defence,Sicilian Defense: French Variation,63,4,70,4,34,25,18,13,28,40,54,6,44,29,21,Rare
+607,Sicilian defence,Sicilian Defense: Najdorf Variation,62,10,67,1,28,33,17,6,38,53,45,2,61,27,10,Rare
