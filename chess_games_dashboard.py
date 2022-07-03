@@ -8,19 +8,24 @@ import dash_bootstrap_components as dbc
 from dash import no_update
 import pandas as pd
 import numpy as np
+import pathlib
 
-# create the app
-app = dash.Dash(external_stylesheets=[dbc.themes.CYBORG], 
-                meta_tags=[{"name": "viewport", "content": "width=device-width, initial-scale=1.0"}])
+# Connect to main app.py file
+from chess_games_app import app
+from chess_games_app import server
 
-# Clear the layout and do not display exception till callback gets executed
-app.config.suppress_callback_exceptions = True
+# Connect to app pages
+from apps import chess_games_about
+
+# get data from datasets folder
+PATH = pathlib.Path(__file__).parent
+DATA_PATH = PATH.joinpath("../Chess-Games-Analysis-all/datasets").resolve()
 
 # Read the top games data into a pandas dataframe
-top_games = pd.read_csv('top games.csv', encoding='iso-8859-1')
+top_games = pd.read_csv(DATA_PATH.joinpath('top games.csv'), encoding='iso-8859-1')
 
 # Read the games data into a pandas dataframe and perform necessary cleansing
-games = pd.read_csv('games.csv', encoding='iso-8859-1')
+games = pd.read_csv(DATA_PATH.joinpath('games.csv'), encoding='iso-8859-1')
 games = games.drop(columns={'ï»¿'})
 games = games.rename(columns={'opening_classification':'opening','opening_name':'variation'})
 
@@ -34,10 +39,11 @@ footer = html.Div(
                     """
                     This information is intended solely as general information for educational purposes only.
                     Any questions, feedback or suggestions please don't hesitate to get in touch:
-                    kasheme.walton@outlook.com
+                    [Email](mailto:kasheme.walton@outlook.com?)
+                    You can view all project content here: [Github](https://github.com/Kasheme/Chess-Games-Analysis)
                     
-                    """
-                ),
+                    """,
+                highlight_config={'theme':'dark'}),
                 className="p-2 mt-5 bg-primary text-white small",
             )
 """
@@ -58,7 +64,7 @@ def create_card(df, title, move, color, inverse=True, fontcolor='white'):
                                            'color': fontcolor})
                     ]
                ),
-               style={'width': '9rem', 'height': '5rem'}, color=color, inverse=inverse)
+               color=color, inverse=inverse, className="w-20")
 
 # Compute graphs data for openings report: df = top_games, df2 = games, value = opening
 def compute_data_choice1(df, df2, value):
@@ -161,15 +167,26 @@ def compute_grouped_boxplot(df, df2, value):
 Layout section of dashboard
 """
 
-app.layout = html.Div(children=[html.H1('Chess Games Analysis Interactive Dashboard',
+app.layout =  html.Div(children=[html.Div([
+                                # page Heading
+                                html.H1('Chess Games Analysis Interactive Dashboard',
                                         style={'textAlign': 'center', 'color': 'black', 'font-size': 36,
-                                               'margin-bottom': '0.75em'},
+                                               'margin-bottom': '0.25em', 'width':'100%'},
                                         className="text-center bg-primary text-white p-2"),
+                                html.Div([
+                                    # link to about page
+                                    dcc.Link('About', href='/apps/chess_games_about'),
+                                    dcc.Link('Dashboard', href='/chess_games_dashboard')
+                                    ], className="row", style={'marign-left':'10em'}
+                                    ),
+                                    dcc.Location(id='url', refresh='False'),
+                                    html.Div(id='page-content', children=[ ]),
+                                ]),
                                 # "title" for First 10 moves display
                                 dbc.Row([
                                     dbc.Col(
-                                        html.Div("Most common first 10 moves",
-                                                 style={'font': "Open Sans", 'color': 'white', 'font-size': 20}),
+                                        html.Div("Most common opening moves",
+                                                 style={'font': "Open Sans", 'color': 'white', 'font-size': 18}),
                                                  style={'textAlign': 'right', 'margin-bottom': '0.5em'},    
                                                  width={'size': 6, 'offset': 3}
                                             ),
@@ -287,7 +304,8 @@ app.layout = html.Div(children=[html.H1('Chess Games Analysis Interactive Dashbo
                                 html.Div(children=[
                                     html.Div([
                                         # helper text for selecting variation
-                                        html.H2('Opening Variation: ', style={'margin-right': '3.8em', 'margin-left': '2em', 'font-size': 28},
+                                        html.H2('Opening Variation: ', style={'margin-right': '2.5em', 'margin-left': '2em',
+                                                                                'font-size': 22},
                                                 id='variation_text'),
                                         ]
                                     ),
@@ -295,7 +313,8 @@ app.layout = html.Div(children=[html.H1('Chess Games Analysis Interactive Dashbo
                                         dcc.Dropdown(id='variation_dropdown',
                                                      multi=False,
                                                      style={'width':'50%', 'padding': '3px', 'font-size': '20px'},
-                                                     options = []
+                                                     options = [],
+                                                     placeholder="Select an opening variation"
                                                      )
                                         ], style={'display': 'flex', 'flex-direction': 'row'}),
                                     
@@ -325,6 +344,17 @@ app.layout = html.Div(children=[html.H1('Chess Games Analysis Interactive Dashbo
 ==================
 Callback functions
 """
+
+""" Callback function to go to about page if link selected"""
+@app.callback(
+    Output('page-content', 'children'),
+    Input('url', 'pathname')
+)
+def display_page(pathname):
+    if pathname == '/apps/chess_games_about':
+        return chess_games_about.layout
+    else:
+        pass
                                 
 """ Callback function that disables the variations dropdown if the Openings Report is selected """
 @app.callback(
@@ -458,15 +488,15 @@ def get_graph(chart, opening, var, children1, children2, c3, c4, c5):
         cafe_colors =  ['rgb(146, 123, 21)', 'rgb(175, 51, 21)', 'rgb(206, 206, 40)', 'rgb(177, 180, 34)']
         
         results_fig = px.pie(results_df, names=results_df.index, values=results_df[opening],
-                             title='Top10 Proportion of results', width=620, template='plotly_dark')
+                             title='Top10 Proportion of results', template='plotly_dark')
         results_fig.update_traces(marker=dict(colors=cafe_colors))
         
         winner_fig = px.pie(winner_df, names=winner_df.index, values=winner_df[opening],
-                            title='Top10 Proportion of winner', width=620, template='plotly_dark')
+                            title='Top10 Proportion of winner', template='plotly_dark')
         winner_fig.update_traces(marker=dict(colors=cafe_colors[0:3]))
         
         freq_fig = px.bar(filtered_df, x='variation', y='frequency', title='Top10 Frequency distribution by variation', 
-                          height=750, width=1235, color='frequency', text_auto=True, template='plotly_dark')
+                          height= 550, width=1235, color='frequency', text_auto=True, template='plotly_dark')
         freq_fig.update_layout(barmode='group', xaxis_tickangle=-45)
         
         scatter_fig = px.scatter(scatter_df, x='avg_turns', y='avg_opening_ply', size='frequency', size_max=40, hover_name=scatter_df.index, 
@@ -490,18 +520,18 @@ def get_graph(chart, opening, var, children1, children2, c3, c4, c5):
         results_df, winner_df, hist_df, rated_df = compute_data_choice2(df=top_games, df2=games, value=var)
         
         results_fig = px.pie(results_df, names=results_df.index, values=results_df[var], 
-                             title='Variation proportion of results', width=620, template='plotly_dark', hole=0.4,
+                             title='Variation proportion of results', template='plotly_dark', hole=0.4,
                              color_discrete_sequence=px.colors.sequential.RdBu)
         
         winner_fig = px.pie(winner_df, names=winner_df.index, values=winner_df[var], hole=0.4,
-                            title='Variation proportion of winner', width=620, template='plotly_dark',
+                            title='Variation proportion of winner', template='plotly_dark',
                             color_discrete_sequence=px.colors.sequential.RdBu)
         
         hist_fig = px.histogram(hist_df, x=hist_df['turns'], color=hist_df['opening_ply'], template='plotly_dark',
                                 title='Statistical distribution of number of turns for all games', pattern_shape=hist_df['rated'])
         
         rated_fig = px.pie(rated_df, names=rated_df.index, values=rated_df['count'], title='Percentage of rated games',
-                           width=620, template='plotly_dark', hole=0.4,
+                           template='plotly_dark', hole=0.4,
                            color_discrete_sequence=px.colors.sequential.RdBu)
         
         grouped_box_fig = compute_grouped_boxplot(df=top_games, df2=games, value=opening)
