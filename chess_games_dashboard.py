@@ -17,15 +17,11 @@ from chess_games_app import server
 # Connect to app pages
 from apps import chess_games_about
 
-# get data from datasets folder
-PATH = pathlib.Path(__file__).parent
-DATA_PATH = PATH.joinpath("../Chess-Games-Analysis-all/datasets").resolve()
-
 # Read the top games data into a pandas dataframe
-top_games = pd.read_csv(DATA_PATH.joinpath('top games.csv'), encoding='iso-8859-1')
+top_games = pd.read_csv(r"https://raw.githubusercontent.com/Kasheme/Chess-Games-Analysis/master/datasets/top%20games.csv", encoding='iso-8859-1')
 
 # Read the games data into a pandas dataframe and perform necessary cleansing
-games = pd.read_csv(DATA_PATH.joinpath('games.csv'), encoding='iso-8859-1')
+games = pd.read_csv("https://raw.githubusercontent.com/Kasheme/Chess-Games-Analysis/master/datasets/games.csv", encoding='iso-8859-1')
 games = games.drop(columns={'ï»¿'})
 games = games.rename(columns={'opening_classification':'opening','opening_name':'variation'})
 
